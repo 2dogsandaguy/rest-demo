@@ -1,0 +1,28 @@
+/* Menu.css */
+
+.category {
+    margin-bottom: 30px;
+  }
+  
+  .dish {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+  }
+  
+  .dish h4 {
+    color: #343a40;
+  }
+  
+  .chef {
+    font-style: italic;
+    color: #6c757d;
+  }
+  
+  .dish-image {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+  }

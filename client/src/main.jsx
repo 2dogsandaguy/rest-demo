@@ -6,7 +6,7 @@ import './index.css';
 
 import App from './App';
 /* import homePage from './routes/homePage'; */
-/* import Menu from './routes/Menu'; */
+import Menu from '../routes/Menu';
 /* import OrderPage from './routes/OrderPage'; */
 import AboutUs from '../routes/AboutUs';
 
@@ -23,14 +23,15 @@ const route = createBrowserRouter([
         path: 'homePage',
         element: <homePage />,
       },
-      {
-        path: 'Menu',
-        element: <Menu />,
-      },
+      
       {
         path: 'OrderPage',
         element: < OrderPage/>,
       }, */
+      {
+        path: 'Menu',
+        element: <Menu />,
+      },
     ],
   },
 ]);

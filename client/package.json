@@ -12,7 +12,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.14",
     "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.11.2",
+    "bootstrap-icons": "^latest_version",
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",

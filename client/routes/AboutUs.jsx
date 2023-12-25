@@ -1,5 +1,5 @@
 import "./AboutUs.css";
-import profileImg from "../../public/images/bbq_1_.jpg"
+import profileImg from "/images/bbq_1_.jpg"
 const AboutUs = () => {
   return (
     <div className="create-container"
@@ -7,10 +7,9 @@ const AboutUs = () => {
         backgroundImage: `url(${profileImg})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
+         display: 'flex',
+        justifyContent: 'center', 
+        alignItems: 'center', 
         position: 'relative',
         overflowY: 'auto',
       }}

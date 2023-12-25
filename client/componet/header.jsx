@@ -26,8 +26,9 @@ const Header = () => {
                 <Link className="nav-link" 
                 to="/" 
                 style={{ background: '#11fc5f',
-                padding: '5px',
-                borderRadius: '5px' 
+                padding: '10px',
+                borderRadius: '5px',
+                marginRight: '10px' 
                 }}
                   >
                 About Me
@@ -38,8 +39,9 @@ const Header = () => {
                 className="nav-link" 
                 to="Menu" 
                 style={{ background: '#11fc57',
-                 padding: '5px',
-                  borderRadius: '5px' 
+                 padding: '10px',
+                  borderRadius: '5px',
+                  marginRight: '10px' 
                 }}
                   >
                     Menu
@@ -50,8 +52,9 @@ const Header = () => {
                 className="nav-link" 
                 to="OrderPage" 
                 style={{ background: '#11fc9a',
-                 padding: '5px', 
-                 borderRadius: '5px' 
+                 padding: '10px', 
+                 borderRadius: '5px',
+                 marginRight: '10px' 
                 }}
                  >
                   Order page
@@ -62,8 +65,9 @@ const Header = () => {
                 className="nav-link" 
                 to="HomePage"  
                 style={{ background: '#11fc57',
-                 padding: '5px',
-                  borderRadius: '5px' 
+                 padding: '10px',
+                  borderRadius: '5px',
+                  marginRight: '10px' 
                 }}
                   >
                     Home Page
@@ -72,28 +76,17 @@ const Header = () => {
             </ul>
           </div>
           <div className="col-md-6 text-right">
-          <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="50"
-        height="30"
-        fill="currentColor"
-        className="bi bi-flag"
-        viewBox="0 0 16 16"
-        style={{ marginTop: '10px', marginRight: '10px' }}
-      >
-        <path
-          fillRule="evenodd"
-          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm1 1a1 1 0 0 1 1-1h7.172a1 1 0 0 1 .707.293l3.536 3.536a1 1 0 0 1 .293.707V13a1 1 0 0 1-1 1H9.586l-1-1H13a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3z"
-        />
-        <path
-          fillRule="evenodd"
-          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zM3.414 4H11a1 1 0 0 1 .707.293l3.536 3.536a1 1 0 0 1 .293.707V13a1 1 0 0 1-1 1H9.586l-1-1H13a1 1 0 0 0 1-1V4H3.414z"
-        />
-        <path
-          fillRule="evenodd"
-          d="M3.707 5a1 1 0 0 1 .707.293l3.536 3.536a1 1 0 0 1 .293.707v6.586l-1-1V8a1 1 0 0 0-1-1H2V5h1.707zM2 4a2 2 0 0 0-2 2v2a1 1 0 0 1-1 1H0v3a2 2 0 0 0 2 2h2v-2a1 1 0 0 1 1-1h7.586l2 2H4a1 1 0 0 1-1 1H1a2 2 0 0 0 2-2V8a1 1 0 0 1 1-1h3.586l2 2H4a1 1 0 0 0-1-1H1V6a2 2 0 0 0 2-2z"
-        />
-      </svg>
+          <img 
+              src="/images/American-Flag.png"  // Update the path to match your file structure
+              alt="American Flag"
+              style={{
+                width: '150px',  // Adjust the width and height as needed
+                height: '100px',
+                objectFit: 'cover',  // This property ensures the image maintains its aspect ratio
+                marginLeft: 'auto',  // Move the image to the right
+                display: 'block',  // Make sure it's a block-level element
+              }}
+            />
           </div>
         </div>
       </div>
