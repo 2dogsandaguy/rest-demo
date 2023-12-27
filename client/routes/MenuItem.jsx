@@ -1,7 +1,19 @@
+import  { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Menu.css';
 import macCheese from "/images/mac-and-cheese.jpg" 
 import bakedBean from "/images/Baked-Beans_015.jpg"
+import wings from "/images/bbq-chicken-wings.jpg"
+import pulledPork from "/images/pulled-pork-sandwich.jpg"
 const Menu = () => {
+  const navigate = useNavigate();
+    const [selectedItems, setSelectedItems] = useState([]);
+  
+    const addItemToOrder = (item) => {
+      setSelectedItems([...selectedItems, item]);
+      console.log('Selected Items after update:', selectedItems);console.log(setSelectedItems, "hello")
+      navigate('/OrderPage'); 
+    };
   const menuItems = [
     {
       category: 'Sides',
@@ -14,8 +26,8 @@ const Menu = () => {
     {
       category: 'Meats',
       items: [
-        { name: 'BBQ Chicken Wings', description: 'Crispy baked chicken wings smothered in a sweet and tangy homemade barbecue sauce...', chef: 'Nicky' },
-        { name: 'Pulled Pork Sandwich', description: 'These Root Beer Pulled Pork Sandwiches are made from only 3 ingredients...', chef: 'Christy' },
+        { name: 'BBQ Chicken Wings', description: 'Crispy baked chicken wings smothered in a sweet and tangy homemade barbecue sauce...', image:wings, chef: 'Nicky' },
+        { name: 'Pulled Pork Sandwich', description: 'These Root Beer Pulled Pork Sandwiches are made from only 3 ingredients...',image: pulledPork, chef: 'Christy' },
         // Add more meat items as needed
       ],
     },
@@ -42,6 +54,9 @@ const Menu = () => {
               <img src={item.image} alt={item.name} className="dish-image" />
               <p>{item.description}</p>
               <p className="chef">Recipe created by {item.chef}.</p>
+              <Link to="/orderPage" onClick={() => addItemToOrder(item)}>
+                Add to Order
+              </Link>
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+
 import "./AboutUs.css";
 import profileImg from "/images/bbq_1_.jpg"
 const AboutUs = () => {

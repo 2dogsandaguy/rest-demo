@@ -6,8 +6,8 @@ import './index.css';
 
 import App from './App';
 /* import homePage from './routes/homePage'; */
-import Menu from '../routes/Menu';
-/* import OrderPage from './routes/OrderPage'; */
+import MenuItem from "../routes/MenuItem";
+import OrderPage from '../routes/OrderPage';
 import AboutUs from '../routes/AboutUs';
 
 const route = createBrowserRouter([
@@ -19,23 +19,24 @@ const route = createBrowserRouter([
         index: true,
         element: <AboutUs />,
       },
-      /* {
-        path: 'homePage',
-        element: <homePage />,
+      {
+        path: 'MenuItem',
+        element: <MenuItem />,
       },
-      
       {
         path: 'OrderPage',
-        element: < OrderPage/>,
-      }, */
-      {
-        path: 'Menu',
-        element: <Menu />,
+        element: <OrderPage />,
       },
     ],
   },
 ]);
 
+/* {
+        path: 'homePage',
+        element: <homePage />,
+      },
+      
+       */
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={route} />
 );
